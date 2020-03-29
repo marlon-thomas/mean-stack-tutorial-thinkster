@@ -2,22 +2,25 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 # Box / OS
+# Memorable name for your VM
+VM_NAME = 'mean-tutorial-vm'
+# VM User — 'vagrant' by default
+VM_USER = 'vagrant'
+
+############## CUSTOMIZE THE FOLLOWING SETTINGS ##############
 # Username on your host machine
 LOGGED_IN_USER = 'marlon'
 # HOST Port — uncomment this to use NAT instead of DHCP - will be forwarded to GUEST_PORT on VM
 HOST_PORT = 8080
+# Git repo name
+GIT_REPO = 'mean-stack-tutorial-thinkster'
 # Host folder to sync
-HOST_PATH = '/Users/' + LOGGED_IN_USER + '/gitrepos/mean-stack-tutorial-thinkster/' + VM_NAME
+HOST_PATH = '/Users/' + LOGGED_IN_USER + '/gitrepos/' + GIT_REPO + '/' + VM_NAME
+#############################################################
 
 # Where to sync to on Guest — 'vagrant' is the default user name
 GUEST_PATH = '/home/' + VM_USER + '/' + VM_NAME
 VAGRANT_BOX = 'ubuntu/trusty64'
-
-# Memorable name for your
-VM_NAME = 'mean-tutorial-vm'
-
-# VM User — 'vagrant' by default
-VM_USER = 'vagrant'
 
 # Port on guest that will be redirected to HOST_POR
 GUEST_PORT = 8888
