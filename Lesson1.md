@@ -4,6 +4,17 @@
 ---
 
 <h1 id="lesson-1">Lesson 1</h1>
+<blockquote>
+<p>Included is a Vagrant configuration file to provision an Ubuntu VM development machine for this project. Change the following variables in the Vagrantfile for your local environment on your host machine:</p>
+<ul>
+<li>LOGGED_IN_USER</li>
+<li>HOST_PATH</li>
+<li>HOST_PORT</li>
+</ul>
+<p>The example Vagrantfile assumes that the project has been cloned as follows:</p>
+<p><code>cd /Users/marlon/gitrepos</code></p>
+<p><code>git clone git@github.com:marlon-thomas/mean-stack-tutorial-thinkster.git</code></p>
+</blockquote>
 <p>To begin this tutorial, we’re going to start with the Angular side of things. AngularJS is a frontend framework developed by Google with the goal of making single page web applications easier to build, test, and maintain. Throughout this tutorials, we’ll be linking to our  <a href="https://thinkster.io/a-better-way-to-learn-angularjs">A Better Way to Learn Angular</a>  guide which can provide supplementary information.</p>
 <p>Without further ado, let’s jump in…</p>
 <h2 id="getting-started">Getting Started</h2>
@@ -36,6 +47,19 @@ function($scope){
 </code></pre>
 <p>With these several lines of code, we’ve set up a new AngularJS app and created a new controller. You’ll notice that we declare a variable  <code>test</code>  in the controller and display its contents using the AngularJS  <code>{{}}</code>  notation. This is demonstrating one of the most powerful features of AngularJS, which is its two-way data-bindings.</p>
 <p>If you aren’t familiar with data-binding in AngularJS, read the AngularJS Guide on  <a href="https://docs.angularjs.org/guide/databinding">two-way data-binding</a></p>
+<blockquote>
+<p>To run the app:</p>
+<ol>
+<li>Run the virtual machine using vagrant<br>
+<code>$ cd mean-stack-tutorial-thinkster</code><br>
+<code>$ vagrant up</code></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>Browse to <a href="http://localhost:8080">http://localhost:8080</a> on your host machine</li>
+</ol>
+</blockquote>
 <h2 id="displaying-lists">Displaying Lists</h2>
 <p>One thing that is going to be absolutely fundamental to our app is displaying lists. Fortunately, angular makes this really easy using the  <a href="https://docs.angularjs.org/api/ng/directive/ngRepeat">ng-repeat</a>  directive.</p>
 <p>To begin, we’re going to modify our controller to include a new  <code>$scope</code>  variable that defines a list of post titles. Add the following code inside the controller function in  <code>app.js</code>:</p>
