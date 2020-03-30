@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="lesson-1">Lesson 1</h1>
 <blockquote>
 <p>Included is a Vagrant configuration file to provision an Ubuntu VM development machine for this project. Change the following variables in the Vagrantfile for your local environment on your host machine:</p>
@@ -106,3 +101,6 @@ function($scope){
 </code></pre>
 <p>AngularJS comes with several  <a href="https://docs.angularjs.org/api/ng/filter">built in filters</a>  but you can also write custom filters tailored to your specific needs.</p>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzA3OTE1ODYwXX0=
+-->
